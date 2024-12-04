@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2016",                          /* Define a versão do JavaScript emitido pelo TypeScript. */
+    "module": "commonjs",                        /* Define o sistema de módulos utilizado. */
+    "moduleResolution": "node",                 /* Permite a resolução de módulos do Node.js. */
+    "jsx": "react-jsx",                          /* Define como o JSX será processado no React. */
+
+    /* Diretórios */
+    "baseUrl": "./src",                          /* Define o diretório base para importações. */
+    "paths": {                                  /* Permite importações absolutas a partir do 'baseUrl'. */
+      "*": ["*"]
+    },
+    "rootDir": "./src",                          /* Define o diretório raiz dos arquivos de entrada. */
+    "outDir": "./dist",                          /* Define o diretório para os arquivos emitidos pelo TypeScript. */
+
+    /* Suporte a Módulos Específicos */
+    "resolveJsonModule": true,                   /* Permite a importação de arquivos JSON. */
+    "esModuleInterop": true,                     /* Garante compatibilidade com módulos CommonJS. */
+
+    /* Regras de Importação */
+    "forceConsistentCasingInFileNames": true,    /* Garante consistência de maiúsculas/minúsculas nos caminhos de arquivo. */
+
+    /* Verificação Estrita */
+    "strict": true,                              /* Ativa todas as verificações de tipo estrito. */
+
+    /* Ignorar Erros em Declarações de Tipo */
+    "skipLibCheck": true                         /* Ignora verificações em arquivos '.d.ts'. */
+  },
+  "include": ["src"],                            /* Inclui a pasta 'src' no projeto. */
+  "exclude": ["node_modules", "dist"]            /* Exclui as pastas desnecessárias do projeto. */
+}
+
+
