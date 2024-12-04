@@ -1,2 +1,2 @@
 # Portfolio
-"Portfólio pessoal de desenvolvimento."
+"Portfólio pessoal em desenvolvimento."
