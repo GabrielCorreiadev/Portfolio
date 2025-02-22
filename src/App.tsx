@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Home, FolderGit2, User, Mail, Github, Linkedin, Moon, Sun, Menu, X } from 'lucide-react';
 import HomeSection from './Components/HomeSection';
 import ProjectsSection from './Components/ProjectsSection';
