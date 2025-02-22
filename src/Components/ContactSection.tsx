@@ -23,7 +23,7 @@ const ContactSection: React.FC = () => {
       initial="hidden"
       animate="show"
     >
-      <motion.h2 variants={item}>Get in Touch</motion.h2>
+      <motion.h2 variants={item}>Entre em contato</motion.h2>
       
       <motion.div className="contact-grid" variants={container}>
         <motion.div 
@@ -36,7 +36,7 @@ const ContactSection: React.FC = () => {
         >
           <Mail className="icon" size={24} />
           <h3>Email</h3>
-          <p>gabriel.correa@example.com</p>
+          <p>gabrielcorreiadsv@gmail.com</p>
         </motion.div>
         
         <motion.div 
@@ -74,7 +74,7 @@ const ContactSection: React.FC = () => {
           boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
         }}
       >
-        <h3>Send me a message</h3>
+        <h3>Me envie uma mensagem</h3>
         
         <form>
           <div className="form-row">
@@ -82,11 +82,11 @@ const ContactSection: React.FC = () => {
               className="form-group"
               variants={item}
             >
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Nome</label>
               <motion.input
                 type="text"
                 id="name"
-                placeholder="Your name"
+                placeholder="Seu Nome..."
                 whileFocus={{ scale: 1.02 }}
               />
             </motion.div>
@@ -99,7 +99,7 @@ const ContactSection: React.FC = () => {
               <motion.input
                 type="email"
                 id="email"
-                placeholder="your@email.com"
+                placeholder="Exemplo@email.com"
                 whileFocus={{ scale: 1.02 }}
               />
             </motion.div>
@@ -109,11 +109,11 @@ const ContactSection: React.FC = () => {
             className="form-group"
             variants={item}
           >
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject">Assunto</label>
             <motion.input
               type="text"
               id="subject"
-              placeholder="Message subject"
+              placeholder="Assunto da Mensagem..."
               whileFocus={{ scale: 1.02 }}
             />
           </motion.div>
@@ -125,7 +125,7 @@ const ContactSection: React.FC = () => {
             <label htmlFor="message">Message</label>
             <motion.textarea
               id="message"
-              placeholder="Your message"
+              placeholder="Your message..."
               rows={4}
               whileFocus={{ scale: 1.02 }}
             ></motion.textarea>
@@ -141,7 +141,7 @@ const ContactSection: React.FC = () => {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            Send Message
+            Enviar Mensagem
             <motion.span
               animate={{ x: [0, 5, 0] }}
               transition={{ repeat: Infinity, duration: 1 }}
