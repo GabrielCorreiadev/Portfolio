@@ -32,7 +32,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ onNavigateToProjects }) => {
       <motion.h1 variants={item}> Olá, Eu sou Gabriel Correia 👋</motion.h1>
 
       <motion.p variants={item} className="intro-text">
-        Sou Supervisor de segurança do trabalho e estou fazendo a transição de carreira 
+        Sou Supervisor de segurança do trabalho e estou em transição de carreira 
         para a área de tecnologia, buscando aprender e aplicar novos conhecimentos em soluções digitais.
       </motion.p>
 

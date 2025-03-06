@@ -75,10 +75,10 @@ function App() {
             <p className="profile-title">Desenvolvedor de Software</p>
             
             <div className="social-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/GabrielCorreiadev" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/in/gabriel-correia-33074a178/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Linkedin size={20} />
               </a>
             </div>
