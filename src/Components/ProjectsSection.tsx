@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
+import PremiusCarImg from '../assets/PremiusCarImg.jpeg'
 
 // Definindo o tipo para os projetos
 interface Project {
@@ -86,10 +87,12 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
               
               <div className="project-links">
                 <motion.a
-                  href="#"
+                  href={index === 0 ? 'https://github.com/GabrielCorreiadev/Premium-Cars.git' :''}
                   className="project-link"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Github size={20} />
                   Code
@@ -115,10 +118,10 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
 // Dados de projetos de exemplo para passar como props
 const projects: Project[] = [
   {
-    title: 'E-commerce Dashboard',
-    description: 'A React-based dashboard for managing online store inventory and sales analytics.',
-    tech: ['React', 'JavaScript', 'CSS'],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=80',
+    title: 'Premium-Cars',
+    description: 'Uma loja virtual de carros de luxo construída com HTML, CSS e JavaScript.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    image: PremiusCarImg,
   },
   {
     title: 'Task Management App',
