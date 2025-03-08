@@ -10,6 +10,8 @@ interface Project {
   description: string;
   tech: string[];
   image: string;
+  codeLink: string;
+  liveDemoLink: string;
 }
 
 // Tipagem para as props do componente
@@ -88,7 +90,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
               
               <div className="project-links">
                 <motion.a
-                  href={project.CodeLink}
+                  href={project.codeLink}
                   className="project-link"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -99,7 +101,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                   Code
                 </motion.a>
                 <motion.a
-                  href={project.LiveDemoLink}
+                  href={project.liveDemoLink}
                   className="project-link"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -141,6 +143,8 @@ const projects: Project[] = [
     description: 'Loja virtual de carros de luxo criada com HTML, CSS e JavaScript. Oferece uma experiência de navegação responsiva e interativa, com design elegante e funcionalidades que destacam a exclusividade dos veículos.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     image: PremiusCarImg,
+    codeLink: 'https://github.com/GabrielCorreiadev/Premium-Cars.git',
+    liveDemoLink: 'https://premiumcars.vercel.app/',
   },
 ];
 
