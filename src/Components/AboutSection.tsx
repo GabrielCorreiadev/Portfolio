@@ -37,8 +37,8 @@ const AboutSection: React.FC = () => {
         </p>
         
         <p>
-          Tenho experiência em HTML, CSS, JavaScript e TypeScript, além de estar me aprofundando 
-          em ReactJS. Minha motivação vem da busca por soluções eficientes e da vontade de enfrentar desafios
+          Tenho experiência em HTML, CSS, JavaScript, Reactjs e entre outras tecnologias, além de estar me aprofundando 
+          em Next.js. Minha motivação vem da busca por soluções eficientes e da vontade de continuar a enfrentar desafios
           reais por meio da tecnologia. Com pensamento analítico e facilidade
           para trabalhar em equipe, estou sempre em busca de aprendizado contínuo e inovação.
         </p>

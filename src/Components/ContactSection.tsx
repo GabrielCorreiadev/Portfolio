@@ -66,7 +66,7 @@ const ContactSection: React.FC = () => {
       alert("Mensagem enviada com sucesso!");
       setFormData({ name: "", email: "", subject: "", message: "" });
 
-      // Aguarda 1 segundo antes de redirecionar para a página inicial
+      // Aguarda 0,5 segundo antes de redirecionar para a página inicial
       setTimeout(() => {
         window.location.href = "/";
       }, 500);

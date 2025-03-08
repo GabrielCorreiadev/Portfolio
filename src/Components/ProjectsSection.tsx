@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import PremiusCarImg from '../assets/PremiusCarImg.jpeg'
+import PorfolioImg from '../assets/Portfolio.jpeg'
 
 // Definindo o tipo para os projetos
 interface Project {
@@ -87,7 +88,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
               
               <div className="project-links">
                 <motion.a
-                  href={index === 0 ? 'https://github.com/GabrielCorreiadev/Premium-Cars.git' :''}
+                  href={project.CodeLink}
                   className="project-link"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -98,10 +99,12 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                   Code
                 </motion.a>
                 <motion.a
-                  href="#"
+                  href={project.LiveDemoLink}
                   className="project-link"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <ExternalLink size={20} />
                   Live Demo
@@ -118,22 +121,26 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
 // Dados de projetos de exemplo para passar como props
 const projects: Project[] = [
   {
+    title: 'Gabriel Correia - Portfólio',
+    description: 'Um site de portfólio responsivo criado com React, TypeScript, Framer Motion e estilizado com técnicas modernas de CSS.',
+    tech: ['React', 'TypeScript', 'Framer Motion', 'CSS', 'Lucide React'],
+    image: PorfolioImg,
+    codeLink: 'https://github.com/GabrielCorreiadev/Portfolio.git',
+    liveDemoLink: 'https://gabrielcorreia.vercel.app/',
+  },
+  {
     title: 'Premium-Cars',
-    description: 'Uma loja virtual de carros de luxo construída com HTML, CSS e JavaScript.',
+    description: 'Loja virtual de carros de luxo criada com HTML, CSS e JavaScript. Oferece uma experiência de navegação responsiva e interativa, com design elegante e funcionalidades que destacam a exclusividade dos veículos.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     image: PremiusCarImg,
+    codeLink: 'https://github.com/GabrielCorreiadev/Premium-Cars.git',
+    liveDemoLink: 'https://premiumcars.vercel.app/',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates.',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&auto=format&fit=crop&q=80',
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'A responsive portfolio website built with modern web technologies.',
-    tech: ['React', 'Framer Motion', 'CSS'],
-    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&auto=format&fit=crop&q=80',
+    title: 'Premium-Cars',
+    description: 'Loja virtual de carros de luxo criada com HTML, CSS e JavaScript. Oferece uma experiência de navegação responsiva e interativa, com design elegante e funcionalidades que destacam a exclusividade dos veículos.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    image: PremiusCarImg,
   },
 ];
 

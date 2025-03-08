@@ -33,7 +33,10 @@ const HomeSection: React.FC<HomeSectionProps> = ({ onNavigateToProjects }) => {
 
       <motion.p variants={item} className="intro-text">
         Sou Supervisor de segurança do trabalho e estou em transição de carreira 
-        para a área de tecnologia, buscando aprender e aplicar novos conhecimentos em soluções digitais.
+        para a área de tecnologia, desenvolvedor Full Stack com especialização em Front-end, experiência em
+        criação de aplicações web responsivas e interativas. Altônomo na implementação de soluções, desde o desing
+        interface até a lógica de negócios no back-end. Experiência com React, Typescript, Tailwind, next.js e integração de APIs.
+        Comprometido com a performace, acessibilidade e código escalável.
       </motion.p>
 
       <motion.div variants={container} className="card-grid">
@@ -50,7 +53,8 @@ const HomeSection: React.FC<HomeSectionProps> = ({ onNavigateToProjects }) => {
             initial="hidden"
             animate="show"
           >
-            {['HTML', 'CSS', 'Git/GitHub', 'JavaScript', 'TailwindCSS', 'TypeScript', 'ReactJs'].map((skill, index) => (
+            {['HTML', 'CSS', 'Git/GitHub', 'JavaScript', 'TailwindCSS', 'TypeScript', 'ReactJs',
+              'Next.js',,,].map((skill, index) => (
               <motion.span
                 key={skill}
                 className="skill-tag"
@@ -70,7 +74,10 @@ const HomeSection: React.FC<HomeSectionProps> = ({ onNavigateToProjects }) => {
             initial="hidden"
             animate="show"
           >
-            {['Comunicação', 'Liderança', 'Trabalho em equipe', 'Adaptabilidade', 'Empatia', 'Resolução de problemas', 'Gestão de tempo', 'Aprendizado Rápido'].map((skill, index) => (
+            {['Liderança', 'Comunicação', 'Gestão de pessoas', 'Desenvolvimento de talentos', 'Tomada de decisão', 
+              'Trabalho em equipe', 'Inteligência emocional', 'Resolução de conflitos', 'Pensamento estratégico', 
+              'Adaptabilidade', 'Escuta Ativa', 'Proatividade', 'Gestão de Tempo', 'Altoconfiança', 'Influência Positiva',
+              'Flexibilidade', 'Motivação', 'Autogestão' , 'Capacidade de Inspirar', 'Foco em Resultados' ].map((skill, index) => (
               <motion.span
                 key={skill}
                 className="skill-tag"
@@ -92,11 +99,13 @@ const HomeSection: React.FC<HomeSectionProps> = ({ onNavigateToProjects }) => {
         >
           <h3>Educação</h3>
           <p>
-            - Engenharia da Computação - Graduação (Junho 2026)<br/>
-            - 8 Cursos de Liderança<br/>
-            - Inglês - básico <br/>
-            - HTML / CSS / GIT/GitHub / Javascript <br/>
-            - TailWindCSS / Typescript / ReactJs<br/>
+          <h5> - Engenharia da Computação </h5> FMU (7° semestre, conclusão em 2026)<br/>
+          <h5>- Curso em Desenvolvimento Web Full Stack </h5>B7Web (Em andamento) <br/>
+            <h5>- Cursos de Liderança</h5> Decodificando a Cultura Organizacional / Desafios da Liderança / Líder de Líderes / O Líder que desenvolver Talentos 
+            / Comunicação Efetiva / Gestão e Desenvolvimento de Pessoas / Liderança Assertiva / Menos é Mais<br/>
+            <h5>- Inglês</h5>Básico <br/>
+            <h5>- Português</h5> Nativo <br/>
+            <h5> Certificações:</h5>  HTML / CSS / GIT/GitHub / Javascript / TailWindCSS / Typescript / ReactJs / Next.js <br/>
           </p>
         </motion.div>
       </motion.div>
