@@ -71,7 +71,12 @@ const ContactSection: React.FC = () => {
         window.location.href = "/";
       }, 500);
     } else {
-      alert("Erro ao enviar a mensagem, tente novamente.");
+      alert("Erro ao enviar mensagem novamente.");  
+
+
+
+
+      
     }
 
     setIsSubmitting(false);

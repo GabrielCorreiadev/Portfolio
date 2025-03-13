@@ -3,6 +3,7 @@ import { motion, Variants } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import PremiusCarImg from '../assets/PremiusCarImg.jpeg'
 import PorfolioImg from '../assets/Portfolio.jpeg'
+import ListaDeTarefasImg from '../assets/lista de tarefas.jpeg'
 
 // Definindo o tipo para os projetos
 interface Project {
@@ -130,6 +131,7 @@ const projects: Project[] = [
     codeLink: 'https://github.com/GabrielCorreiadev/Portfolio.git',
     liveDemoLink: 'https://gabrielcorreia.vercel.app/',
   },
+
   {
     title: 'Premium-Cars',
     description: 'Loja virtual de carros de luxo criada com HTML, CSS e JavaScript. Oferece uma experiência de navegação responsiva e interativa, com design elegante e funcionalidades que destacam a exclusividade dos veículos.',
@@ -139,12 +141,12 @@ const projects: Project[] = [
     liveDemoLink: 'https://premiumcars.vercel.app/',
   },
   {
-    title: 'Premium-Cars',
-    description: 'Loja virtual de carros de luxo criada com HTML, CSS e JavaScript. Oferece uma experiência de navegação responsiva e interativa, com design elegante e funcionalidades que destacam a exclusividade dos veículos.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    image: PremiusCarImg,
-    codeLink: 'https://github.com/GabrielCorreiadev/Premium-Cars.git',
-    liveDemoLink: 'https://premiumcars.vercel.app/',
+    title: 'Lista de Tarefas',
+    description: 'Aplicação de gerenciamento de tarefas desenvolvida com React. Permite adicionar, editar, marcar como concluídas e excluir tarefas, proporcionando uma experiência interativa e intuitiva.',
+    tech: ['React', 'JavaScript', 'Tailwind CSS'],
+    image: ListaDeTarefasImg, // Substitua pela imagem correspondente
+    codeLink: 'https://github.com/GabrielCorreiadev/Lista-de-Tarefas',
+    liveDemoLink: 'https://tasksgc.vercel.app/',
   },
 ];
 
