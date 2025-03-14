@@ -55,7 +55,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ onNavigateToProjects }) => {
             animate="show"
           >
             {['HTML', 'CSS', 'Git/GitHub', 'JavaScript', 'TailwindCSS', 'TypeScript', 'ReactJs',
-              'Next.js',,,].map((skill, index) => (
+              'Next.js', 'MongoDB',,,].map((skill, index) => (
               <motion.span
                 key={skill}
                 className="skill-tag"
