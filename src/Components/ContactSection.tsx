@@ -22,9 +22,7 @@ const ContactSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null); // Criando referência para a seção
 
   useEffect(() => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   // Estado para armazenar os dados do formulário
