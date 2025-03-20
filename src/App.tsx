@@ -31,6 +31,7 @@ function App() {
   const handleNavigation = (section: string) => {
     setActiveSection(section);
     setIsMobileMenuOpen(false);
+    window.scrollTo(0, 0);
   };
 
   const renderContent = () => {
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <div className="app-container">
+      
       <button 
         className="mobile-menu-button"
         onClick={toggleMobileMenu}

@@ -4,6 +4,7 @@ import { ExternalLink, Github } from 'lucide-react';
 import PremiusCarImg from '../assets/PremiusCarImg.jpeg'
 import PorfolioImg from '../assets/Portfolio.jpeg'
 import ListaDeTarefasImg from '../assets/lista de tarefas.jpeg'
+import ChatSimplesImg from '../assets/chatsimples.jpeg'
 
 // Definindo o tipo para os projetos
 interface Project {
@@ -135,16 +136,24 @@ const projects: Project[] = [
   {
     title: 'Premium-Cars',
     description: 'Loja virtual de carros de luxo criada com HTML, CSS e JavaScript. Oferece uma experiência de navegação responsiva e interativa, com design elegante e funcionalidades que destacam a exclusividade dos veículos.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
     image: PremiusCarImg,
     codeLink: 'https://github.com/GabrielCorreiadev/Premium-Cars.git',
     liveDemoLink: 'https://premiumcars.vercel.app/',
   },
   {
+    title: 'Chat Simples',
+    description: 'Chat simples desenvolvido com Next.js, utilizando Context, Reducer, TypeScript e Tailwind CSS. Projeto focado no aprendizado de gerenciamento de estado global e interface moderna.',
+    tech: ['Next.js', 'TypeScript', 'Context API', 'Reducer', 'Tailwind CSS'],
+    image: ChatSimplesImg, 
+    codeLink: 'https://github.com/GabrielCorreiadev/Chat-Simples',
+    liveDemoLink: 'https://chatsimples.vercel.app/',
+  },
+  {
     title: 'Lista de Tarefas',
     description: 'Aplicação de gerenciamento de tarefas desenvolvida com React. Permite adicionar, editar, marcar como concluídas e excluir tarefas, proporcionando uma experiência interativa e intuitiva.',
     tech: ['React', 'JavaScript', 'Tailwind CSS'],
-    image: ListaDeTarefasImg, // Substitua pela imagem correspondente
+    image: ListaDeTarefasImg, 
     codeLink: 'https://github.com/GabrielCorreiadev/Lista-de-Tarefas',
     liveDemoLink: 'https://tasksgc.vercel.app/',
   },
