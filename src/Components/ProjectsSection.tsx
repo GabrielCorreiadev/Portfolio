@@ -5,6 +5,7 @@ import PremiusCarImg from '../assets/PremiusCarImg.jpeg'
 import PorfolioImg from '../assets/Portfolio.jpeg'
 import ListaDeTarefasImg from '../assets/lista de tarefas.jpeg'
 import ChatSimplesImg from '../assets/chatsimples.jpeg'
+import SmviImage from '../assets/smvi.jpeg'
 
 // Definindo o tipo para os projetos
 interface Project {
@@ -125,8 +126,16 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
 // Dados de projetos de exemplo para passar como props
 const projects: Project[] = [
   {
+    title: 'SMVI Sistema de Monitoramento de Violência Contra o Idoso',
+    description: 'SMVI é um sistema de monitoramento de violência contra o idoso, desenvolvido para coletar, gerenciar e gerar relatórios detalhados sobre denúncias registradas pelo Disque 100. O sistema permite o preenchimento de formulários, análise de dados com gráficos interativos, e fornece uma visão geral sobre os locais e perfis envolvidos, contribuindo para o combate à violência contra a população idosa.',
+    tech: ['NextJs', 'TypeScript', 'Framer Motion', 'TailwindCSS', 'Lucide React'],
+    image: SmviImage,
+    codeLink: 'https://github.com/GabrielCorreiadev/SMVI-Sistema-de-Monitoramento-de-Violencia-Contra-o-Idoso',
+    liveDemoLink: 'Em desenvolvimento',
+  },
+  {
     title: 'Gabriel Correia - Portfólio',
-    description: 'Um site de portfólio responsivo criado com React, TypeScript, Framer Motion e estilizado com técnicas modernas de CSS.',
+    description: 'Portfólio interativo e dinâmico, que exibe meus projetos de desenvolvimento e soluções criativas de forma destacada. Com um design moderno e otimizado para diversos dispositivos, oferece uma navegação fluida e intuitiva, permitindo que os visitantes explorem facilmente as minhas competências e abordagens inovadoras em cada projeto, proporcionando uma experiência envolvente e profissional.',
     tech: ['React', 'TypeScript', 'Framer Motion', 'CSS', 'Lucide React'],
     image: PorfolioImg,
     codeLink: 'https://github.com/GabrielCorreiadev/Portfolio.git',
@@ -135,7 +144,7 @@ const projects: Project[] = [
 
   {
     title: 'Premium-Cars',
-    description: 'Loja virtual de carros de luxo criada com HTML, CSS e JavaScript. Oferece uma experiência de navegação responsiva e interativa, com design elegante e funcionalidades que destacam a exclusividade dos veículos.',
+    description: 'Loja virtual de carros de luxo que oferece aos usuários uma experiência exclusiva de compra. O site apresenta uma navegação fluída e interativa, permitindo explorar veículos de alto padrão com imagens detalhadas, descrições refinadas e funcionalidades que destacam a sofisticação e a exclusividade dos modelos, proporcionando uma experiência única aos amantes de carros de luxo.',
     tech: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
     image: PremiusCarImg,
     codeLink: 'https://github.com/GabrielCorreiadev/Premium-Cars.git',
@@ -143,7 +152,7 @@ const projects: Project[] = [
   },
   {
     title: 'Chat Simples',
-    description: 'Chat simples desenvolvido com Next.js, utilizando Context, Reducer, TypeScript e Tailwind CSS. Projeto focado no aprendizado de gerenciamento de estado global e interface moderna.',
+    description: 'Chat simples e interativo, projetado para proporcionar uma experiência fluida e dinâmica entre o usuário e o bot. A interface foi desenvolvida para ser intuitiva, permitindo uma troca de mensagens clara e eficiente em uma única tela, com foco em usabilidade e rapidez nas interações.',
     tech: ['Next.js', 'TypeScript', 'Context API', 'Reducer', 'Tailwind CSS'],
     image: ChatSimplesImg, 
     codeLink: 'https://github.com/GabrielCorreiadev/Chat-Simples',
@@ -151,7 +160,7 @@ const projects: Project[] = [
   },
   {
     title: 'Lista de Tarefas',
-    description: 'Aplicação de gerenciamento de tarefas desenvolvida com React. Permite adicionar, editar, marcar como concluídas e excluir tarefas, proporcionando uma experiência interativa e intuitiva.',
+    description: 'Aplicação de gerenciamento de tarefas, oferecendo uma forma prática e eficiente de organizar suas atividades. Com funcionalidades de adicionar, editar, concluir e excluir tarefas, proporciona uma experiência fluida e intuitiva para o usuário, facilitando o controle e acompanhamento das tarefas diárias.',
     tech: ['React', 'JavaScript', 'Tailwind CSS'],
     image: ListaDeTarefasImg, 
     codeLink: 'https://github.com/GabrielCorreiadev/Lista-de-Tarefas',
