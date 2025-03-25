@@ -131,6 +131,7 @@ const projects: Project[] = [
     tech: ['NextJs', 'TypeScript', 'Framer Motion', 'TailwindCSS', 'Lucide React'],
     image: SmviImage,
     codeLink: 'https://github.com/GabrielCorreiadev/SMVI-Sistema-de-Monitoramento-de-Violencia-Contra-o-Idoso',
+    liveDemoLink: 'https://smvi.vercel.app/',
   },
   {
     title: 'Gabriel Correia - Portfólio',
