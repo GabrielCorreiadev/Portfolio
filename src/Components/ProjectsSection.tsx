@@ -127,11 +127,10 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
 const projects: Project[] = [
   {
     title: 'SMVI Sistema de Monitoramento de Violência Contra o Idoso',
-    description: 'SMVI é um sistema de monitoramento de violência contra o idoso, desenvolvido para coletar, gerenciar e gerar relatórios detalhados sobre denúncias registradas pelo Disque 100. O sistema permite o preenchimento de formulários, análise de dados com gráficos interativos, e fornece uma visão geral sobre os locais e perfis envolvidos, contribuindo para o combate à violência contra a população idosa.',
+    description: 'SMVI é um sistema de monitoramento de violência contra o idoso, desenvolvido para coletar, gerenciar e gerar relatórios detalhados sobre denúncias registradas pelo Disque 100. O sistema permite o preenchimento de formulários, análise de dados com gráficos interativos, e fornece uma visão geral sobre os locais e perfis envolvidos, contribuindo para o combate à violência contra a população idosa. (Em Desenvolvimento)',
     tech: ['NextJs', 'TypeScript', 'Framer Motion', 'TailwindCSS', 'Lucide React'],
     image: SmviImage,
     codeLink: 'https://github.com/GabrielCorreiadev/SMVI-Sistema-de-Monitoramento-de-Violencia-Contra-o-Idoso',
-    liveDemoLink: 'Em desenvolvimento',
   },
   {
     title: 'Gabriel Correia - Portfólio',
